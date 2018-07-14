@@ -3,9 +3,8 @@
     package="com.memas.social.memas">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-feature android:name="android.hardware.camera" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -25,8 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ScannerActivity" />
+        <activity android:name=".StoreActivity" />
+        <activity android:name=".PaymetAvtivity" />
+        <activity android:name=".newpay" />
+        <activity android:name=".confirmpay"></activity>
     </application>
 
 </manifest>

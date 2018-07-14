@@ -22,7 +22,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
 
-        loginButton.setOnClickListener { startActivity(Intent(this@LoginActivity,MainActivity::class.java)) }
+        loginButton.setOnClickListener {
+            startActivity(Intent(this@LoginActivity,
+                    StoreActivity::class.java).putExtra("check",false)) }
 
         signupTextView.setOnClickListener { startActivity(Intent(this@LoginActivity,SignUpActivity::class.java)) }
 
