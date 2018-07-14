@@ -12,12 +12,21 @@
     tools:context=".LoginActivity">
 
     <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="textPersonName"
+        android:hint="name"/>
+
+    <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:inputType="textEmailAddress"
         android:hint="email"/>
+
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
@@ -26,21 +35,28 @@
         android:inputType="textPassword"
         android:hint="@string/prompt_password"/>
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/passwordEditTextConfirm"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Login"/>
+        android:inputType="textPassword"
+        android:hint="@string/prompt_password"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"/>
 
     <TextView
-        android:id="@+id/signupTextView"
+        android:id="@+id/loginTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_margin="20dp"
         android:textColor="#3f55ff"
-        android:text="don't have account? \n signUp" />
+        android:text="Login" />
 
 
 </LinearLayout>
